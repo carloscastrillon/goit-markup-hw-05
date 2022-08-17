@@ -18,8 +18,10 @@ body {
   height: 80px;
   padding-right: 215px;
   padding-left: 215px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  border: 1px solid #ECECEC;
 }
 
 .logowebstudio {
@@ -30,15 +32,26 @@ body {
 }
 
 .linkheader {
-  font-weight: 500;
-  font-size: 14px;
+  margin: 20px;
+  color: black;
 }
 
-.contact {
+.linkheader:hover {
+  color: var(--blue-color);
+}
+
+.contact > .linkemail {
   color: var(--gray-color);
 }
 
-.linkemail,
+.contact > .celnumber {
+  color: var(--gray-color);
+}
+
+.linkemail:hover {
+  color: var(--blue-color);
+}
+
 .celnumber:hover {
   color: var(--blue-color);
 }
@@ -92,6 +105,22 @@ body {
 .icons {
   background: var(--background);
   border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+.icon-mail2{
+  width: 16px;
+  height: 12px;
+  fill: #afb1b8;
+}
+
+.icon-antena,
+.icon-reloj,
+.icon-diagram,
+.icon-astronauta {
+  width: 65px;
+  height: 70px;
 }
 
 .texticon {
@@ -110,6 +139,7 @@ body {
 .imgwork {
   width: 370px;
   height: 294px;
+  margin: 5px;
 }
 
 .ourteam {
@@ -139,6 +169,7 @@ h2 {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   height: 428px;
+  margin-left: 20px;
 }
 
 .teammemberphoto {
@@ -155,18 +186,22 @@ h2 {
   color: var(--gray-color);
 }
 
-.redes {
+.iconredes {
   display: flex;
+  margin-top: 10px;
 }
 
-.icon-redes {
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
   width: 40px;
   height: 20px;
   cursor: pointer;
   fill: #afb1b8;
 }
 
-.icon-redes:hover {
+.icon-instagram:hover {
   color: var(--blue-color);
 }
 
@@ -175,6 +210,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 300px;
 }
 
 .clients {
@@ -186,6 +222,8 @@ h2 {
   height: 81px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 .icon-client {
   width: 106px;
@@ -193,14 +231,82 @@ h2 {
   fill: #afb1b8;
 }
 
-footer{
-    height: 252px;
-    background: #2F303A;
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
+footer {
+  height: 252px;
+  background: #2f303a;
+  color: var(--white-color);
+  display: flex;
+  padding-left: 215px;
+  padding-top: 50px;
+}
+
+.contacfooter {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.contacfooter > .linkemail {
+  color: var(--white-color);
+}
+
+.redesfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sectionbutton {
+  padding-right: 215px;
+  padding-left: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 56px;
 }
 
 .buttonportafolio {
+  height: 38px;
   cursor: pointer;
+  background: var(--background);
+  color: #212121;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.buttonportafolio:hover {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 215px;
+  padding-left: 215px;
+}
+
+.projectinfo {
+  margin: 8px;
+  width: 370px;
+  height: 404px;
+  background:var(--white-color);
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projectsdetail{
+  margin: 20px;
+}
+.projectsdetail>h3{
+  font-size: 18px;
+}
+
+.projectsdetail>p{
+  color:var(--gray-color);
+  font-size: 16px;
 }
